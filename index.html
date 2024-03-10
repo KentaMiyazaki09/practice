@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>猫の塗り絵</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="wrap">
+  <h1>塗り絵ニャンコ</h1>
+  <div>
+    <form id="palette" class="palette">
+  <label>左目
+    <input id="eye-left" type="color" value="#000000">
+  </label>
+  <label>右目
+    <input id="eye-right" type="color" value="#000000">
+  </label>
+  <label>背中
+    <input id="pattern-back" type="color" value="#999999">
+  </label>
+  <label>しっぽ
+    <input id="pattern-tail" type="color" value="#999999">
+  </label>
+  <label>顔
+    <input id="pattern-face" type="color" value="#999999">
+  </label>
+  <label>腕
+    <input id="pattern-arm" type="color" value="#999999">
+  </label>
+  <label>足
+    <input id="pattern-leg" type="color" value="#999999">
+  </label>
+</form>
+
+  </div>
+  <div class="btn-box">
+    <a id="download-btn" class="btn" href="#" download="canvas.png">ダウンロード(PNG)</a>
+  </div>
+  <div>
+    <canvas id="canvas" width="700" height="700"></canvas>
+  </div>
+  <p><a href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm#fromView=search&page=1&position=8&uuid=6d97cd21-33f2-4ad7-9eb6-f33dd9d1d6fa">著作者：freepik</a></p>
+</div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
