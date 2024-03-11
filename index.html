@@ -10,7 +10,7 @@
 <body>
 <div class="wrap">
   <h1>塗り絵ニャンコ</h1>
-  <div>
+  <div class="box-margin">
     <form id="palette" class="palette">
   <label>左目
     <input id="eye-left" type="color" value="#000000">
@@ -36,13 +36,24 @@
 </form>
 
   </div>
-  <div class="btn-box">
-    <a id="download-btn" class="btn" href="#" download="canvas.png">ダウンロード(PNG)</a>
+  <div class="box-margin">
+    <p>スタンプ</p>
+    <form id="stamp">
+      <label>月
+        <input id="stamp-moon" type="checkbox" value="">
+      </label>
+      <label>帽子
+        <input id="stamp-hat" type="checkbox" value="">
+      </label>
+    </form>
+  </div>
+  <div class="box-margin">
+    <a id="download-btn" class="btn" href="#" download="canvas.jpg">ダウンロード</a>
   </div>
   <div>
     <canvas id="canvas" width="700" height="700"></canvas>
   </div>
-  <p><a href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm">著作者：freepik</a></p>
+  <p><a href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm" target="_blank" rel="noopener noreferrer">著作者：freepik</a></p>
 </div>
   <script src="./js/main.js"></script>
 </body>
