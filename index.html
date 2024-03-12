@@ -10,54 +10,71 @@
 <body>
 <div class="wrap">
   <h1>塗り絵ニャンコ</h1>
-  <div class="box-margin">
-    <form id="palette" class="palette">
-  <label>左目
-    <input id="eye-left" type="color" value="#000000">
+  <div class="box-margin"><form class="palette">
+  <label
+    >左目
+    <input id="eye-left" type="color" value="#000000" />
   </label>
-  <label>右目
-    <input id="eye-right" type="color" value="#000000">
+  <label
+    >右目
+    <input id="eye-right" type="color" value="#000000" />
   </label>
-  <label>背中
-    <input id="pattern-back" type="color" value="#999999">
+  <label
+    >背中
+    <input id="pattern-back" type="color" value="#999999" />
   </label>
-  <label>しっぽ
-    <input id="pattern-tail" type="color" value="#999999">
+  <label
+    >しっぽ
+    <input id="pattern-tail" type="color" value="#999999" />
   </label>
-  <label>顔
-    <input id="pattern-face" type="color" value="#999999">
+  <label
+    >顔
+    <input id="pattern-face" type="color" value="#999999" />
   </label>
-  <label>腕
-    <input id="pattern-arm" type="color" value="#999999">
+  <label
+    >腕
+    <input id="pattern-arm" type="color" value="#999999" />
   </label>
-  <label>足
-    <input id="pattern-leg" type="color" value="#999999">
+  <label
+    >足
+    <input id="pattern-leg" type="color" value="#999999" />
   </label>
 </form>
-
-  </div>
+</div>
   <div class="box-margin">
     <p>スタンプ</p>
-    <form id="stamp">
-  <label>月
-    <input id="stamp-moon" type="checkbox" value="">
-  </label>
-  <label>帽子
-    <input id="stamp-hat" type="checkbox" value="">
-  </label>
-</form>
+    <ul>
+  <li><button class="stamp-button" name="moon">月</button></li>
+  <li><button class="stamp-button" name="hat">帽子</button></li>
+</ul>
+
+    <button class="clear-btn">clear</button>
   </div>
   <div class="box-margin">
-    <a id="download-btn" class="btn" href="#" download="canvas.jpg">ダウンロード</a>
+    <button class="concat-btn">完成！</button>
   </div>
-  <div>
-    <div class="canvas-box">
-      <canvas id="canvas" width="700" height="700"></canvas>
-      <canvas id="canvas-items" class="canvas-items" width="700" height="700"></canvas>
+  <div><div class="canvas-box" id="canvas-box">
+  <canvas class="canvas" width="670" height="670"></canvas>
+  <canvas class="stamps-canvas" canvas class="canvas" width="670" height="670"></canvas>
+</div>
+</div>
+  <p>
+    <a
+      href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm"
+      target="_blank"
+      rel="noopener noreferrer"
+      >著作者：freepik</a
+    >
+  </p>
+</div>
+<div class="download">
+  <div class="download__content">
+    <div class="download__content__inner">
+      <canvas class="concat-canvas" width="670" height="670"></canvas>
+      <p><a class="download-btn" href="#" download="cat.jpg">ダウンロード</a></p>
     </div>
   </div>
-  <p><a href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm" target="_blank" rel="noopener noreferrer">著作者：freepik</a></p>
 </div>
-  <script src="./js/main.js"></script>
+   <script src="./js/main.js"></script>
 </body>
 </html>
