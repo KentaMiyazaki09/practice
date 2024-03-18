@@ -10,7 +10,12 @@
 <body>
 <div class="wrap">
   <h1>塗り絵ニャンコ</h1>
-  <div class="box-margin"><form class="palette">
+
+  <div class="tool">
+  <ul class="tool__box">
+    <li>
+      <p class="tool__title">猫の色</p>
+      <form class="palette">
   <label
     >左目
     <input id="eye-left" type="color" value="#000000" />
@@ -40,19 +45,22 @@
     <input id="pattern-leg" type="color" value="#999999" />
   </label>
 </form>
-</div>
-  <div class="box-margin">
-    <p>スタンプ</p>
-    <ul>
+
+    </li>
+    <li>
+      <p class="tool__title">スタンプ</p>
+      <ul class="stamp">
   <li><button class="stamp-button" name="moon">月</button></li>
   <li><button class="stamp-button" name="hat">帽子</button></li>
 </ul>
 
-    <button class="clear-btn">clear</button>
-  </div>
-  <div class="box-margin">
-    <button class="concat-btn">完成！</button>
-  </div>
+      <button class="clear-btn">clear</button>
+    </li>
+  </ul>
+  <button class="concat-btn">完成！</button>
+</div>
+
+
   <div><div class="canvas-box" id="canvas-box">
   <canvas class="canvas" width="670" height="670"></canvas>
   <canvas class="stamps-canvas" canvas class="canvas" width="670" height="670"></canvas>
