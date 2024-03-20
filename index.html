@@ -9,13 +9,16 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>塗り絵ニャンコ</h1>
+  <h1 class="page-title">塗り絵ニャンコ</h1>
 
   <div class="tool">
-  <ul class="tool__box">
-    <li>
-      <p class="tool__title">猫の色</p>
-      <form class="palette">
+  <ul class="tool__menu">
+    <li class="is-active">猫の色</li>
+    <li>スタンプ</li>
+    <!-- <li>背景</li> -->
+  </ul>
+  <ul class="tool__list">
+    <li class="is-active"><form class="palette">
   <label
     >左目
     <input id="eye-left" type="color" value="#000000" />
@@ -45,10 +48,8 @@
     <input id="pattern-leg" type="color" value="#999999" />
   </label>
 </form>
-
-    </li>
+</li>
     <li>
-      <p class="tool__title">スタンプ</p>
       <ul class="stamp">
   <li><button class="stamp-button" name="moon">月</button></li>
   <li><button class="stamp-button" name="hat">帽子</button></li>
@@ -56,8 +57,17 @@
 
       <button class="clear-btn">clear</button>
     </li>
+    <li>
+      <ul class="background">
+  <li><button class="background-button" name="award">アワード</button></li>
+</ul>
+
+      <button class="clear-btn">clear</button>
+    </li>
   </ul>
-  <button class="concat-btn">完成！</button>
+  <div class="tool__bottom">
+    <button class="concat-btn">完成！</button>
+  </div>
 </div>
 
 
