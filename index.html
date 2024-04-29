@@ -1,98 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
+<head prefix=”og: http://ogp.me/ns#”>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>猫の塗り絵</title>
-  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- meta -->
+  <title>タイトル</title>
+  <meta name="description" content="">
+
+  <!-- ogp -->
+  <meta property="og:title" content="タイトル">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="サイトの名前">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="canonical" href="サイトのURL">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
-<div class="wrap">
-  <h1 class="page-title">塗り絵ニャンコ</h1>
-
-  <div class="tool">
-  <ul class="tool__menu">
-    <li class="is-active">猫の色</li>
-    <li>スタンプ</li>
-    <!-- <li>背景</li> -->
-  </ul>
-  <ul class="tool__list">
-    <li class="is-active"><form class="palette">
-  <label
-    >左目
-    <input id="eye-left" type="color" value="#000000" />
-  </label>
-  <label
-    >右目
-    <input id="eye-right" type="color" value="#000000" />
-  </label>
-  <label
-    >背中
-    <input id="pattern-back" type="color" value="#999999" />
-  </label>
-  <label
-    >しっぽ
-    <input id="pattern-tail" type="color" value="#999999" />
-  </label>
-  <label
-    >顔
-    <input id="pattern-face" type="color" value="#999999" />
-  </label>
-  <label
-    >腕
-    <input id="pattern-arm" type="color" value="#999999" />
-  </label>
-  <label
-    >足
-    <input id="pattern-leg" type="color" value="#999999" />
-  </label>
-</form>
-</li>
-    <li>
-      <ul class="stamp">
-  <li><button class="stamp-button" name="moon">月</button></li>
-  <li><button class="stamp-button" name="hat">帽子</button></li>
-</ul>
-
-      <button class="clear-btn">clear</button>
-    </li>
-    <li>
-      <ul class="background">
-  <li><button class="background-button" name="award">アワード</button></li>
-</ul>
-
-      <button class="clear-btn">clear</button>
-    </li>
-  </ul>
-  <div class="tool__bottom">
-    <button class="concat-btn">完成！</button>
-  </div>
-</div>
 
 
-  <div><div class="canvas-box" id="canvas-box">
-  <canvas class="canvas" width="670" height="670"></canvas>
-  <canvas class="stamps-canvas" canvas class="canvas" width="670" height="670"></canvas>
+<div class="stage"></div>
+<div class="controller">
+  <button type="button" class="button button-get-fov">get FOV</button>
 </div>
-</div>
-  <p>
-    <a
-      href="https://jp.freepik.com/free-vector/hand-drawn-cat-outline-illustration_22890231.htm"
-      target="_blank"
-      rel="noopener noreferrer"
-      >著作者：freepik</a
-    >
-  </p>
-</div>
-<div class="download">
-  <div class="download__content">
-    <div class="download__content__inner">
-      <canvas class="concat-canvas" width="670" height="670"></canvas>
-      <p><a class="download-btn" href="#" download="cat.jpg">ダウンロード</a></p>
-    </div>
-  </div>
-</div>
-   <script src="./js/main.js"></script>
+<script src="/assets/js/index.js"></script>
+
 </body>
 </html>
